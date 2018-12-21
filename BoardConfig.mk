@@ -15,14 +15,14 @@
 # limitations under the License.
 
 # inherit from the proprietary version
--include vendor/motorola/victara/BoardConfigVendor.mk
+-include vendor/motorola/ghost/BoardConfigVendor.mk
 
-LOCAL_PATH := device/motorola/victara
+LOCAL_PATH := device/motorola/ghost
 
 BOARD_VENDOR := motorola-qcom
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := victara
+TARGET_OTA_ASSERT_DEVICE := xt1052,ghost,xt1053,ghost_retail,xt1055,ghost_usc,xt1056,ghost_sprint,xt1058,ghost_att,ghost_rcica,xt1060,ghost_verizon
 
 # AIDs and CAPS
 TARGET_FS_CONFIG_GEN := \
@@ -33,12 +33,12 @@ TARGET_FS_CONFIG_GEN := \
 TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8974
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
+TARGET_BOARD_PLATFORM := msm8960
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno320
 BOARD_USES_QCOM_HARDWARE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8974
+TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 TARGET_NO_BOOTLOADER := true
 
 # Architecture
@@ -52,16 +52,17 @@ TARGET_CPU_VARIANT := krait
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 vmalloc=400M
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2 androidboot.write_protect=0
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_LZ4C_DT := true
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --dt $(LOCAL_PATH)/dt.img
 LZMA_RAMDISK_TARGETS := boot,recovery
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8974
-TARGET_KERNEL_CONFIG := lineageos_victara_defconfig
+TARGET_KERNEL_SOURCE := kernel/motorola/ghost
+TARGET_KERNEL_CONFIG := lineageos_ghost_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage
+TARGET_KERNEL_SELINUX_CONFIG := msm8960_mmi_selinux_defconfig
 
 # Audio
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
@@ -122,13 +123,14 @@ EXTENDED_FONT_FOOTPRINT := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Hardware
-BOARD_HARDWARE_CLASS := device/motorola/victara/lineagehw
+BOARD_HARDWARE_CLASS := device/motorola/ghost/lineagehw
 
 # HIDL
-DEVICE_MANIFEST_FILE := device/motorola/victara/configs/manifest.xml
+DEVICE_MANIFEST_FILE := device/motorola/ghost/configs/manifest.xml
 
 # Init
-TARGET_NR_SVC_SUPP_GIDS := 32
+TARGET_INIT_VENDOR_LIB := libinit_ghost
+TARGET_NR_SVC_SUPP_GIDS := 28
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -137,9 +139,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2902458368
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 10970071040
-BOARD_CACHEIMAGE_PARTITION_SIZE := 1428234240
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A00000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1560281088
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12884901888
 TARGET_USES_MKE2FS := true
 
 # Power
@@ -169,11 +171,11 @@ TARGET_USE_SDCLANG := true
 include device/qcom/sepolicy/sepolicy.mk
 include device/qcom/sepolicy/legacy-sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += device/motorola/victara/sepolicy
+BOARD_SEPOLICY_DIRS += device/motorola/ghost/sepolicy
 
 # Vendor Init
-TARGET_INIT_VENDOR_LIB := libinit_victara
-TARGET_RECOVERY_DEVICE_MODULES := libinit_victara
+TARGET_INIT_VENDOR_LIB := libinit_ghost
+TARGET_RECOVERY_DEVICE_MODULES := libinit_ghost
 
 # Vold
 BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
