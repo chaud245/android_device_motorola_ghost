@@ -18,10 +18,10 @@
 
 set -e
 
-DEVICE=victara
+DEVICE=ghost
 VENDOR=motorola
 
-INITIAL_COPYRIGHT_YEAR=2014
+INITIAL_COPYRIGHT_YEAR=2013
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

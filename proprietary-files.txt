@@ -21,20 +21,20 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
-etc/acdbdata/victara_cn/victara_cn_Handset_cal.acdb
-etc/acdbdata/victara_cn/victara_cn_Bluetooth_cal.acdb
-etc/acdbdata/victara_cn/victara_cn_Speaker_cal.acdb
-etc/acdbdata/victara_cn/victara_cn_Hdmi_cal.acdb
-etc/acdbdata/victara_cn/victara_cn_General_cal.acdb
-etc/acdbdata/victara_cn/victara_cn_Global_cal.acdb
-etc/acdbdata/victara_cn/victara_cn_Headset_cal.acdb
-etc/acdbdata/victara/victara_Global_cal.acdb
-etc/acdbdata/victara/victara_Handset_cal.acdb
-etc/acdbdata/victara/victara_Bluetooth_cal.acdb
-etc/acdbdata/victara/victara_Hdmi_cal.acdb
-etc/acdbdata/victara/victara_General_cal.acdb
-etc/acdbdata/victara/victara_Speaker_cal.acdb
-etc/acdbdata/victara/victara_Headset_cal.acdb
+etc/acdbdata/ghost_cn/ghost_cn_Handset_cal.acdb
+etc/acdbdata/ghost_cn/ghost_cn_Bluetooth_cal.acdb
+etc/acdbdata/ghost_cn/ghost_cn_Speaker_cal.acdb
+etc/acdbdata/ghost_cn/ghost_cn_Hdmi_cal.acdb
+etc/acdbdata/ghost_cn/ghost_cn_General_cal.acdb
+etc/acdbdata/ghost_cn/ghost_cn_Global_cal.acdb
+etc/acdbdata/ghost_cn/ghost_cn_Headset_cal.acdb
+etc/acdbdata/ghost/ghost_Global_cal.acdb
+etc/acdbdata/ghost/ghost_Handset_cal.acdb
+etc/acdbdata/ghost/ghost_Bluetooth_cal.acdb
+etc/acdbdata/ghost/ghost_Hdmi_cal.acdb
+etc/acdbdata/ghost/ghost_General_cal.acdb
+etc/acdbdata/ghost/ghost_Speaker_cal.acdb
+etc/acdbdata/ghost/ghost_Headset_cal.acdb
 
 # Audio firmware
 etc/firmware/aonvr1.bin
@@ -325,4 +325,4 @@ vendor/lib/libsensor1.so
 bin/time_daemon:vendor/bin/time_daemon
 
 # Touch frimware
-etc/firmware/atmel-a432-14102902-0103aa-victara.tdat
+etc/firmware/atmel-a432-14102902-0103aa-ghost.tdat

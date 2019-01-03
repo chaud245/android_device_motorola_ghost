@@ -1,5 +1,5 @@
 #
-# system.prop for msm8974
+# system.prop for msm8960
 #
 
 # Audio
@@ -70,6 +70,6 @@ ro.disableWifiApFirmwareReload=true
 
 # Other
 # Motorola's init sets this, let's just do it ourselves
-ro.hw.device=victara
+ro.hw.device=ghost
 # Play store
 ro.com.google.clientidbase.gmm=android-motorola

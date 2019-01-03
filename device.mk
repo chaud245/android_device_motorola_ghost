@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/motorola/victara/victara-vendor.mk)
+$(call inherit-product, vendor/motorola/ghost/ghost-vendor.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -45,31 +45,31 @@ PRODUCT_COPY_FILES += \
 
 # Motorola-specific permissions
 PRODUCT_COPY_FILES += \
-    device/motorola/victara/permissions/com.motorola.actions.xml:system/etc/permissions/com.motorola.actions.xml \
-    device/motorola/victara/permissions/com.motorola.android.dm.service.xml:system/etc/permissions/com.motorola.android.dm.service.xml \
-    device/motorola/victara/permissions/com.motorola.android.encryption_library.xml:system/etc/permissions/com.motorola.android.encryption_library.xml \
-    device/motorola/victara/permissions/com.motorola.android.tcmd.xml:system/etc/permissions/com.motorola.android.tcmd.xml \
-    device/motorola/victara/permissions/com.motorola.aon.quickpeek.xml:system/etc/permissions/com.motorola.aon.quickpeek.xml \
-    device/motorola/victara/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
-    device/motorola/victara/permissions/com.motorola.avatar.xml:system/etc/permissions/com.motorola.avatar.xml \
-    device/motorola/victara/permissions/com.motorola.camerabgproc_library.xml:system/etc/permissions/com.motorola.camerabgproc_library.xml \
-    device/motorola/victara/permissions/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
-    device/motorola/victara/permissions/com.motorola.fpsmotosignature.xml:system/etc/permissions/com.motorola.fpsmotosignature.xml \
-    device/motorola/victara/permissions/com.motorola.frameworks.core.addon.xml:system/etc/permissions/com.motorola.frameworks.core.addon.xml \
-    device/motorola/victara/permissions/com.motorola.gallery.xml:system/etc/permissions/com.motorola.gallery.xml \
-    device/motorola/victara/permissions/com.motorola.haptic.xml:system/etc/permissions/com.motorola.haptic.xml \
-    device/motorola/victara/permissions/com.motorola.moodle.library.xml:system/etc/permissions/com.motorola.moodle.library.xml \
-    device/motorola/victara/permissions/com.motorola.motodisplay.pd.screenoff.xml:system/etc/permissions/com.motorola.motodisplay.pd.screenoff.xml \
-    device/motorola/victara/permissions/com.motorola.motosignature.xml:system/etc/permissions/com.motorola.motosignature.xml \
-    device/motorola/victara/permissions/com.motorola.moto.xml:system/etc/permissions/com.motorola.moto.xml \
-    device/motorola/victara/permissions/com.motorola.pixelpipe.xml:system/etc/permissions/com.motorola.pixelpipe.xml \
-    device/motorola/victara/permissions/com.motorola.sensorhub.stm401.xml:system/etc/permissions/com.motorola.sensorhub.stm401.xml \
-    device/motorola/victara/permissions/com.motorola.slpc.xml:system/etc/permissions/com.motorola.slpc.xml \
-    device/motorola/victara/permissions/com.motorola.software.bodyguard.xml:system/etc/permissions/com.motorola.software.bodyguard.xml \
-    device/motorola/victara/permissions/com.motorola.software.guideme.xml:system/etc/permissions/com.motorola.software.guideme.xml \
-    device/motorola/victara/permissions/com.motorola.software.smartnotifications.xml:system/etc/permissions/com.motorola.software.smartnotifications.xml \
-    device/motorola/victara/permissions/com.motorola.software.x_line.xml:system/etc/permissions/com.motorola.software.x_line.xml \
-    device/motorola/victara/permissions/com.motorola.targetnotif.xml:system/etc/permissions/com.motorola.targetnotif.xml
+    device/motorola/ghost/permissions/com.motorola.actions.xml:system/etc/permissions/com.motorola.actions.xml \
+    device/motorola/ghost/permissions/com.motorola.android.dm.service.xml:system/etc/permissions/com.motorola.android.dm.service.xml \
+    device/motorola/ghost/permissions/com.motorola.android.encryption_library.xml:system/etc/permissions/com.motorola.android.encryption_library.xml \
+    device/motorola/ghost/permissions/com.motorola.android.tcmd.xml:system/etc/permissions/com.motorola.android.tcmd.xml \
+    device/motorola/ghost/permissions/com.motorola.aon.quickpeek.xml:system/etc/permissions/com.motorola.aon.quickpeek.xml \
+    device/motorola/ghost/permissions/com.motorola.aov.xml:system/etc/permissions/com.motorola.aov.xml \
+    device/motorola/ghost/permissions/com.motorola.avatar.xml:system/etc/permissions/com.motorola.avatar.xml \
+    device/motorola/ghost/permissions/com.motorola.camerabgproc_library.xml:system/etc/permissions/com.motorola.camerabgproc_library.xml \
+    device/motorola/ghost/permissions/com.motorola.camera.xml:system/etc/permissions/com.motorola.camera.xml \
+    device/motorola/ghost/permissions/com.motorola.fpsmotosignature.xml:system/etc/permissions/com.motorola.fpsmotosignature.xml \
+    device/motorola/ghost/permissions/com.motorola.frameworks.core.addon.xml:system/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    device/motorola/ghost/permissions/com.motorola.gallery.xml:system/etc/permissions/com.motorola.gallery.xml \
+    device/motorola/ghost/permissions/com.motorola.haptic.xml:system/etc/permissions/com.motorola.haptic.xml \
+    device/motorola/ghost/permissions/com.motorola.moodle.library.xml:system/etc/permissions/com.motorola.moodle.library.xml \
+    device/motorola/ghost/permissions/com.motorola.motodisplay.pd.screenoff.xml:system/etc/permissions/com.motorola.motodisplay.pd.screenoff.xml \
+    device/motorola/ghost/permissions/com.motorola.motosignature.xml:system/etc/permissions/com.motorola.motosignature.xml \
+    device/motorola/ghost/permissions/com.motorola.moto.xml:system/etc/permissions/com.motorola.moto.xml \
+    device/motorola/ghost/permissions/com.motorola.pixelpipe.xml:system/etc/permissions/com.motorola.pixelpipe.xml \
+    device/motorola/ghost/permissions/com.motorola.sensorhub.stm401.xml:system/etc/permissions/com.motorola.sensorhub.stm401.xml \
+    device/motorola/ghost/permissions/com.motorola.slpc.xml:system/etc/permissions/com.motorola.slpc.xml \
+    device/motorola/ghost/permissions/com.motorola.software.bodyguard.xml:system/etc/permissions/com.motorola.software.bodyguard.xml \
+    device/motorola/ghost/permissions/com.motorola.software.guideme.xml:system/etc/permissions/com.motorola.software.guideme.xml \
+    device/motorola/ghost/permissions/com.motorola.software.smartnotifications.xml:system/etc/permissions/com.motorola.software.smartnotifications.xml \
+    device/motorola/ghost/permissions/com.motorola.software.x_line.xml:system/etc/permissions/com.motorola.software.x_line.xml \
+    device/motorola/ghost/permissions/com.motorola.targetnotif.xml:system/etc/permissions/com.motorola.targetnotif.xml
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -99,8 +99,8 @@ PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.soundtrigger@2.0-impl \
     audio.a2dp.default \
-    audio_policy.msm8974 \
-    audio.primary.msm8974 \
+    audio_policy.msm8960 \
+    audio.primary.msm8960 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
@@ -127,7 +127,7 @@ PRODUCT_PACKAGES += \
     Snap \
     libshim_camera \
     libshims_sensorlistener \
-    camera.msm8974
+    camera.msm8960
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hdrhax:system/vendor/etc/hdrhax
@@ -149,11 +149,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.memtrack@1.0-impl \
-    copybit.msm8974 \
-    gralloc.msm8974 \
-    hwcomposer.msm8974 \
+    copybit.msm8960 \
+    gralloc.msm8960 \
+    hwcomposer.msm8960 \
     libgenlock \
-    memtrack.msm8974
+    memtrack.msm8960
 
 # GNSS HAL
 PRODUCT_PACKAGES += \
@@ -162,7 +162,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
-    gps.msm8974
+    gps.msm8960
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
@@ -180,12 +180,12 @@ PRODUCT_COPY_FILES += \
 # Keystore
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
-    keystore.msm8974
+    keystore.msm8960
 
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
-    lights.msm8974
+    lights.msm8960
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -212,8 +212,8 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 PRODUCT_COPY_FILES += \
-    device/motorola/victara/nfc/libnfc-brcm.conf:system/vendor/etc/libnfc-brcm.conf \
-    device/motorola/victara/nfc/libnfc-brcm-20795a10.conf:system/vendor/etc/libnfc-brcm-20795a10.conf
+    device/motorola/ghost/nfc/libnfc-brcm.conf:system/vendor/etc/libnfc-brcm.conf \
+    device/motorola/ghost/nfc/libnfc-brcm-20795a10.conf:system/vendor/etc/libnfc-brcm-20795a10.conf
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -273,7 +273,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-victara.conf:system/etc/thermal-engine-victara.conf
+    $(LOCAL_PATH)/configs/thermal-engine-ghost.conf:system/etc/thermal-engine-ghost.conf
 
 PRODUCT_PACKAGES += \
     libshims_thermal
