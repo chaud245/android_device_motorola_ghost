@@ -1,20 +1,20 @@
-Unified Device Tree For Motorola X[2014]
+Unified Device Tree For Motorola X[2013]
 ========================================
 
-The Motorola X (codenamed _"Victara"_) is a high-end smartphone from Motorola mobility.
-It was announced on September 2014.
+The Motorola X (codenamed _"Ghost"_) is a high-end smartphone from Motorola mobility.
+It was announced on August 2013.
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Quad-core 2.5 GHz Krait 400
-CHIPSET | Qualcomm MSM8974AC Snapdragon 801
-GPU     | Adreno 330
+CPU     | Dual-core 1.7 GHz
+CHIPSET | Qualcomm MSM8960 Snapdragon S4
+GPU     | Adreno 320
 Memory  | 2GB RAM
-Shipped Android Version | 4.4.4
+Shipped Android Version | 4.2
 Storage | 16/32 GB
-Battery | Li-Ion 2300 mAh battery
-Display | 1080 x 1920 pixels, 5.2 inches (~424 ppi pixel density)
-Camera  | 13 MP, 4128 x 3096 pixels, autofocus, dual-LED flash
+Battery | Li-Ion 2200 mAh battery
+Display | 1280 x 720 pixels, 4.7 inches (~316 ppi pixel density)
+Camera  | 10 MP, 1920 x 1080 pixels, autofocus, dual-LED flash
 
 This branch is for building LineageOS Firmware.
 

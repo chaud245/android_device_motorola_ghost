@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_DEVICE),victara)
+ifeq ($(TARGET_DEVICE),ghost)
 
 LOC_PATH := $(call my-dir)
 
